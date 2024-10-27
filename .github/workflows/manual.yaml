@@ -1,4 +1,4 @@
-name: APIM CLI Docker
+name: APIM Github action
 
 #on:
 #  release:
@@ -20,7 +20,7 @@ jobs:
             #gh release download $RELEASE_NO -p *.tar.gz
 
             - name: Axway APIM-CLI Github Action
-              uses: Axway-API-Management-Plus/apim-cli-github-action@v1.14.7
+              uses: Axway-API-Management-Plus/apim-cli-github-action@v1.6.0
               with:
                   command: apim get app
 
