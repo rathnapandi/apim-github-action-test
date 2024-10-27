@@ -24,7 +24,7 @@ jobs:
               env:
                   LOG_LEVEL: DEBUG
               with:
-                  command: "apim api import -c ${{ github.workspace }}/api-config.json -a ${{ github.workspace }}/api.json -h maverick.demo.axway.com -u apiadmin -p ${{ secrets.password }}"
+                  command: "apim api import -c ${{ runner.workspace }}/api-config.json -a ${{ runner.workspace }}/api.json -h maverick.demo.axway.com -u apiadmin -p ${{ secrets.password }}"
 
 
 
