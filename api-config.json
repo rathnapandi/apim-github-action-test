@@ -3,7 +3,7 @@
   "path": "/healthcheck/teste/api/versao/1-14-7",
   "state": "published",
   "version": "1.0.0",
-  "organization":"API Development ${orgNumber}",
+  "organization":"API Development",
   "backendBasepath" : "http://127.0.0.1:8080/healthcheck",
   "tags": {
     "has-swagger": [
