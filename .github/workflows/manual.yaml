@@ -1,0 +1,28 @@
+name: APIM CLI Docker
+
+#on:
+#  release:
+#    types: [published]
+
+on:
+    workflow_dispatch:
+        inputs:
+            releaseVersion:
+                description: "Provide git tag version like 1.13.5"
+                required: true
+
+jobs:
+    build-apim-docker-image:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            #gh release download $RELEASE_NO -p *.tar.gz
+
+            - name: Axway APIM-CLI Github Action
+              uses: Axway-API-Management-Plus/apim-cli-github-action@v1.14.7
+              with:
+                  command: apim get app
+
+
+
