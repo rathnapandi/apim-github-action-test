@@ -20,7 +20,7 @@ jobs:
             #gh release download $RELEASE_NO -p *.tar.gz
 
             - name: Axway APIM-CLI Github Action
-              uses: Axway-API-Management-Plus/apim-cli-github-action@v1.6.1
+              uses: Axway-API-Management-Plus/apim-cli-github-action@v1.6.2
               with:
                   command: apim get app
 
