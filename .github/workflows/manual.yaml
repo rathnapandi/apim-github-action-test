@@ -22,7 +22,7 @@ jobs:
             - name: Axway APIM-CLI Github Action
               uses: Axway-API-Management-Plus/apim-cli-github-action@v1.6.6
               with:
-                  command: apim get app -h maverick.demo.axway.com -u apiadmin -p ${{ secrets.password }}
+                  command: "apim get app -h maverick.demo.axway.com -u apiadmin -p ${{ secrets.password }}"
 
 
 
